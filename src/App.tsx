@@ -1,4 +1,4 @@
-import UseEffect from "./Components/useEffect"
+import UseEffect from "./Components/UseEffect"
 
 function App(){
   return(
