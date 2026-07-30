@@ -19,7 +19,7 @@ function Conditional() {
   };
 
   return (
-    <div>
+    <div className="Conditional">
         {loading ? (
         <h2>Loading...</h2>
       ) : isLogin ? (
@@ -28,7 +28,7 @@ function Conditional() {
         <h2>Silakan Login</h2>
       )}
       {isLogin && !loading && (
-      <p>Selamat datang di Dashboard 🎉</p>)}
+      <p>Konnichiwa!</p>)}
 
       <button onClick={handleLogin}>
         {isLogin ? "Logout" : "Login"}

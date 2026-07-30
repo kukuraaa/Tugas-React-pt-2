@@ -11,7 +11,7 @@ function UseEffect(){
     document.title = "kukuraamahwa in here <3 - useEffect";
   };
     return(
-        <div>
+        <div className="useEffect">
             <h1> Day 1 useEffect</h1>
             <p>Tanggal & Waktu</p>
             <p>{dateTime}</p>

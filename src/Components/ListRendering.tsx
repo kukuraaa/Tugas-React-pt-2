@@ -52,9 +52,9 @@ function ListRendering(){
     },
   ];
   return(
-    <div>
+    <div className="Rendering">
       {products.map((product) => (
-        <div key={product.id}>
+        <div className="product-item" key={product.id}>
           <h3>{product.nama}</h3>
           <p>Harga: Rp {product.harga}</p>
 
