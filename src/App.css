@@ -15,7 +15,7 @@ body {
     --brand-green: #2e7d32;
     --brand-green-dark: #1b5e20;
     --gap: 20px;
-    --max-width: 1200px;
+    --max-width: 1400px;
 }
 .top-section {
     width: 90%;
@@ -146,6 +146,9 @@ body {
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
 }
+.result-card p b {
+    color: var(--brand-green);
+}
 .form-group input:focus {
     outline: none;
     border-color: var(--brand-green);
@@ -166,15 +169,27 @@ body {
 
 .result-card {
     margin-top: 30px;
-    padding: 20px;
+    padding: 20px 40px;
     background: #f8fff8;
     border-left: 5px solid var(--brand-green);
     border-radius: 10px;
     text-align: left;
 }
-.result-card h3 { color: var(--brand-green); margin-bottom: 15px; }
 
-.result-card p { margin: 8px 0; color: #555; }
+.result-card h3 {
+    color: var(--brand-green);
+    margin: 0 0 15px;
+}
+
+.result-card p {
+    margin: 0;
+    padding: 12px 0;
+    color: #555;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.result-card p:last-child { border-bottom: none; }
 
 .user-list {
     width: 90%;
@@ -222,22 +237,29 @@ body {
     border-radius: var(--card-radius);
     border-left: 5px solid var(--brand-green);
     box-shadow: var(--card-shadow);
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 190px;
+    min-height: 170px;
 }
+
 .user-card:hover { box-shadow: var(--card-shadow-hover); }
 
-.user-card h3 { color: var(--brand-green);  margin: 0 0 10px; }
+.user-card h3 {
+    color: var(--brand-green);
+    margin: 0 0 10px;
+    font-size: 20px;
+}
 
-.user-card p { color: #666; margin: 0 0 6px; }
+.user-card p {
+    color: #666;
+    margin: 0 0 10px;
+    font-size: 16px;
+}
 
 .user-card hr {
     display: block;
-    margin-top: 15px;
+    margin-top: auto;
     border: none;
     border-top: 1px solid #ddd;
     width: 100%;
