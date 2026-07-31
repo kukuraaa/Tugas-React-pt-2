@@ -56,7 +56,7 @@ function ListRendering(){
       {products.map((product) => (
         <div className="product-item" key={product.id}>
           <h3>{product.nama}</h3>
-          <p>Harga: Rp {product.harga}</p>
+          <p>Harga : Rp {product.harga.toLocaleString("id-ID")}</p>
 
           <button>Edit</button>
           <button>Hapus</button>
@@ -65,8 +65,6 @@ function ListRendering(){
         </div>
       ))}
     </div>
-
   );
-
 }
 export default ListRendering;

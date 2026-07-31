@@ -22,66 +22,64 @@ function FormValidation() {
       harga,
       kategori,
     });
+
     setNama("");
     setHarga("");
     setKategori("");
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <div>
+    <div className="form-card">
+      <h2>Tambah Produk</h2>
+
+      <form className="product-form" onSubmit={handleSubmit}>
+
+        <div className="form-group">
           <label>Nama Produk</label>
-          <br />
           <input
             type="text"
             value={nama}
             onChange={(e) => setNama(e.target.value)}
+            placeholder="Masukkan nama produk"
           />
         </div>
 
-        <br />
-
-        <div>
+        <div className="form-group">
           <label>Harga</label>
-          <br />
           <input
             type="number"
             value={harga}
             onChange={(e) => setHarga(e.target.value)}
+            placeholder="Masukkan harga"
           />
         </div>
 
-        <br />
-
-        <div>
+        <div className="form-group">
           <label>Kategori</label>
-          <br />
           <input
             type="text"
             value={kategori}
             onChange={(e) => setKategori(e.target.value)}
+            placeholder="Masukkan kategori"
           />
         </div>
 
-        <br />
-
-        <button type="submit">
+        <button className="submit-btn" type="submit">
           Tambah Produk
         </button>
+
       </form>
 
-      <hr />
-
       {produk && (
-        <div>
-          <h2>Data Produk</h2>
-          <p>Nama : {produk.nama}</p>
-          <p>Harga : Rp {produk.harga}</p>
-          <p>Kategori : {produk.kategori}</p>
+        <div className="result-card">
+          <h3>Data Produk</h3>
+          <p><b>Nama :</b> {produk.nama}</p>
+          <p><b>Harga :</b> Rp {produk.harga}</p>
+          <p><b>Kategori :</b> {produk.kategori}</p>
         </div>
       )}
     </div>
   );
 }
+
 export default FormValidation;
