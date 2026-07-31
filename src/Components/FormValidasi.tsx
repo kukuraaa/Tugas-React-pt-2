@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function FormValidation() {
+function FormValidasi() {
   const [nama, setNama] = useState("");
   const [harga, setHarga] = useState("");
   const [kategori, setKategori] = useState("");
@@ -82,4 +82,4 @@ function FormValidation() {
   );
 }
 
-export default FormValidation;
+export default FormValidasi;
